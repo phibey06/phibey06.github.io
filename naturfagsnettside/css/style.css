@@ -1,0 +1,105 @@
+body {
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+img {
+    width: 50%;
+    margin-top: 10px;
+}
+
+@media (orientation: landscape) {
+    #navcont {
+        width: 100vw;
+        height: 48px;
+        margin: 0;
+        top: 0;
+        position: sticky;
+        display: flex;
+        overflow: hidden;
+        background-color: #000000CC;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: saturate(180%) blur(20px);
+        z-index: 2;
+    }
+}
+
+@media (orientation: landscape) {
+    #imgcont {
+        margin-top: 48px;
+        width: 100%;
+        top: 0;
+        z-index: -1;
+        display: flex;
+        overflow: hidden;
+        position: fixed;
+    }
+}
+
+@media (orientation: landscape) {
+    #img {
+        width: 100%;
+    }
+}
+
+@media (orientation: landscape) {
+    #margfrostimg {
+        width: 100%;
+    }
+}
+
+@media (orientation: landscape) {
+    #logocont {
+        height: 48px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (orientation: landscape) {
+    #logotitle {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 2.5rem;
+        letter-spacing: 20px;
+        display: inline-block;
+    }
+}
+
+@media (orientation: landscape) {
+    #textcont {
+        padding: 10px;
+        color: #ffffff;
+        background-color: #333333CC;
+        backdrop-filter: saturate(180%) blur(20px);
+        z-index: 1;
+    }
+}
+
+@media (orientation: landscape) {
+    #textcont2 {
+        padding: 5px;
+        color: #ffffff;
+        margin-top: 200px;
+        background-color: #333333CC;
+        backdrop-filter: saturate(180%) blur(20px);
+        z-index: 1;
+    }
+}
+
+@media (orientation: landscape) {
+    #footer {
+        height: 160px;
+        background-color: #0f0f0fCC;
+        backdrop-filter: saturate(180%) blur(20px);
+        color: #ffffff;
+        padding: 5px;
+        margin-top: 40px;
+    }
+}
