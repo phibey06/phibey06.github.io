@@ -1,0 +1,33 @@
+#box {
+    display: flex;
+    margin: 0 auto;
+}
+
+#kalkulator {
+    width: 400px;
+    height: 200px;
+    background-color: #999999;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    display: flex;
+}
+
+p {
+    width: 10px;
+    margin: auto;
+}
+
+button {
+    display: inline-block;
+    margin: auto;
+}
+
+#resultat {
+    width: 400px;
+    height: 60px;
+    text-align: center;
+}
