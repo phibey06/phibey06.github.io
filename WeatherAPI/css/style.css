@@ -1,0 +1,8 @@
+#gridwrapper {
+    grid-template-columns: repeat(1, 3 fr);
+    display: grid;
+}
+
+#day1boks, #day2boks, #day3boks, #day4boks, #day5boks, #day6boks, #day7boks {
+    height: 250px;
+}
