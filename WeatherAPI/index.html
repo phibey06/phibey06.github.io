@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/weatherscript.js"></script>
+</head>
+<body>
+    <div id="oppgmain">
+        <h1>YR API</h1>
+        <p>Skriv inn bredde og lengdegrad koordinater i boksene under for å få informasjon</p>
+        <input id="lat" type="text" value="" placeholder="Breddegrad" alt="putt inn verdi for breddegrad">
+        <input id="lon" type="text" value="" placeholder="Lengdegrad" alt="putt inn verdi for lengdegrad">
+        <button id="weatherBtn" type="button" onclick="weatherAPI();">Hva er været?</button>
+        <button id="clearBtn" type="button" onclick="clearInput();">Fjern input</button>
+        
+        <div id="gridwrapper"> <!-- start gridwrapper-->
+            <div id="day1boks">
+            <h1>Dag 1</h1>
+            <p id="d1_apatsl"></p>
+            <p id="d1_at"></p>
+            <p id="d1_caf"></p>
+            <p id="d1_rh"></p>
+            <p id="d1_wfd"></p>
+            <p id="d1_ws"></p>
+            </div>
+
+            <div id="day2boks">
+            <h1>Dag 2</h1>
+            <p id="d2_apatsl"></p>
+            <p id="d2_at"></p>
+            <p id="d2_caf"></p>
+            <p id="d2_rh"></p>
+            <p id="d2_wfd"></p>
+            <p id="d2_ws"></p>
+            </div>
+
+            <div id="day3boks">
+            <h1>Dag 3</h1>
+            <p id="d3_apatsl"></p>
+            <p id="d3_at"></p>
+            <p id="d3_caf"></p>
+            <p id="d3_rh"></p>
+            <p id="d3_wfd"></p>
+            <p id="d3_ws"></p>
+            </div>
+
+            <div id="day4boks">
+            <h1>Dag 4</h1>
+            <p id="d4_apatsl"></p>
+            <p id="d4_at"></p>
+            <p id="d4_caf"></p>
+            <p id="d4_rh"></p>
+            <p id="d4_wfd"></p>
+            <p id="d4_ws"></p>
+            </div>
+
+            <div id="day5boks">
+            <h1>Dag 5</h1>
+            <p id="d5_apatsl"></p>
+            <p id="d5_at"></p>
+            <p id="d5_caf"></p>
+            <p id="d5_rh"></p>
+            <p id="d5_wfd"></p>
+            <p id="d5_ws"></p>
+            </div>
+            
+            <div id="day6boks">
+            <h1>Dag 6</h1>
+            <p id="d6_apatsl"></p>
+            <p id="d6_at"></p>
+            <p id="d6_caf"></p>
+            <p id="d6_rh"></p>
+            <p id="d6_wfd"></p>
+            <p id="d6_ws"></p>
+            </div>
+
+            <div id="day7boks">
+            <h1>Dag 7</h1>
+            <p id="d7_apatsl"></p>
+            <p id="d7_at"></p>
+            <p id="d7_caf"></p>
+            <p id="d7_rh"></p>
+            <p id="d7_wfd"></p>
+            <p id="d7_ws"></p>
+            </div>
+        </div> <!-- end gridwrapper-->
+    </div> <!-- end oppgmain-->
+</body>
+</html>
