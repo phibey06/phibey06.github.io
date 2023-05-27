@@ -1,0 +1,196 @@
+:: StoryTitle
+The IM Game
+
+
+:: StoryData
+{
+  "ifid": "0A315636-5990-4DC3-8DE2-B687D779EFCB",
+  "format": "SugarCube",
+  "format-version": "2.36.1",
+  "start": "Start",
+  "zoom": 1
+}
+
+
+:: 1 {"position":"700,125","size":"100,100"}
+<div class="gridbox"><div><img src="https://raw.githubusercontent.com/phibey06/phibey06.github.io/main/twine/jessepinkman.png"></div><div class="textbox">Velkommen til the IM Game, i dette spillet skal du klare å gjennomføre oppgaven og oppnå en høyest mulig karakter, lykke til!</div></div>
+
+
+@@.textShadow;[[Fortsett|2]]@@?
+
+
+:: 1A {"position":"575,375","size":"100,100"}
+Jaså, du har bestemt deg for å jukse? Du har nå to forskjellige muligheter;
+@@.textShadow;[[Lag metamfetamin|2A]]@@ eller @@.textShadow;[[Bruk en AI for å skrive teksten|2B]]@@?
+
+
+:: 1B {"position":"825,375","size":"100,100"}
+@@.textShadow;[[Skriv din egen tekst|3C]]@@ eller @@.textShadow;[[Prokrastiner|2D]]@@?
+
+
+:: 2 {"position":"700,250","size":"100,100"}
+<div class="gridbox"><div><img src="https://raw.githubusercontent.com/phibey06/phibey06.github.io/main/twine/walter_white.png"></div><div class="textbox">Du skal skrive en in-depth oppgave om metamfetamin, kriteriene er: min. 2000 ord, Du skal lenke alle kildene du har brukt og husk tekststørrelse 12 og times new roman font.</div></div>
+
+@@.textShadow;[[Juks|1A]]@@ eller @@.textShadow;[[Prokrastiner|1B]]@@?
+
+
+:: 2A {"position":"450,500","size":"100,100"}
+Du velger å se på en tutorial for å lage "Blue Sky" metamfetamin, du ender opp med et par gram av det.
+
+@@.textShadow;[[Bestikk Walter med metamfetamin|3A]]@@
+
+
+:: 2B {"position":"575,500","size":"100,100"}
+Du velger å bruke ChatGPT for å skrive oppgaven, den skriver en godt strukturert tekst.
+Men etter å ha tenkt deg om kommer du opp med 2 forskjellige måter, enten å
+[[Levere inn tekst skrevet av ChatGPT|3B]] eller å [[Skrive din egen tekst|3C]]
+
+
+:: 2D {"position":"950,500","size":"100,100"}
+Du velger å prokrastinere i et par dager, når innleveringen kommer får du en melding fra Walter: Husk å levere inn oppgaveteksten!
+
+Du har to valg: [[Skrive din egen tekst|3C]] eller [[Bruke ChatGPT for å skrive teksten for deg|2B]].
+
+
+:: 3A {"position":"325,625","size":"100,100"}
+Du sykler bort til huset til Walter, banker på og gir han posen med metamfetamin, han setter mye pris på arbeidet ditt og gir deg en sterk sekser.
+
+<<timed 15s>>
+	<<goto [[4A]]>>
+<</timed>>
+
+
+:: 3B {"position":"500,625","size":"100,100"}
+Du velger å levere inn teksten skrevet av ChatGPT, etter et par dager får du tilbakemelding på teksten.
+
+<<timed 20s>>
+	<<goto [[Calculator]]>>
+<</timed>>
+
+
+:: 3C {"position":"650,625","size":"100,100"}
+Du velger å skrive din egen tekst, den har ingen struktur og innholdet er magert, du leverer inn teksten og venter på svar.
+
+<<timed 15s>>
+	<<goto [[5B]]>>
+<</timed>>
+
+
+:: 4A {"position":"200,750","size":"100,100"}
+Et par dager senere banker politiet på døren etter at de fikk et anonymt tips, politiet beslaglegger metamfetaminen din og du går inn på teams for å se at karakteren din har gått fra 6 til 2.
+
+<<timed 20s>>
+	<<goto [[Start]]>>
+<</timed>>
+
+
+:: 5A {"position":"300,875","size":"100,100"}
+Etter å ha levert inn oppgaven fikk du en 6+, gratulerer!
+
+<<timed 20s>>
+	<<goto [[Start]]>>
+<</timed>>
+
+
+:: 5B {"position":"425,875","size":"100,100"}
+Etter å ha levert inn oppgaven fikk du en 2-, prøv igjen.
+Ikke juks på innleveringer!
+
+<<timed 20s>>
+	<<goto [[Start]]>>
+<</timed>>
+
+
+:: 5C {"position":"575,875","size":"100,100"}
+Etter å ha levert inn oppgaven fikk du en 6+, Walter likte oppgaveteksten din, gratulerer!
+
+<<timed 20s>>
+	<<goto [[Start]]>>
+<</timed>>
+
+
+:: Calculator {"position":"500,750","size":"100,100"}
+<<set $chance to random(1)>>
+
+<<if $chance is 0>>
+<<goto [[5B]]>>
+<<elseif $chance is 1>>
+<<goto [[5C]]>
+<</if>>
+
+
+:: Random {"position":"900,100","size":"100,100"}
+<<set $chance to random(1)>>
+
+<<if $chance is 0>>
+<<goto Passage>>
+<<elseif $chance is 1>>
+<<goto Passage>>
+<</if>>
+
+
+:: Start {"position":"700,0","size":"100,100"}
+@@.title;The IM Game@@
+
+@@.textShadow;[[Start|1]]@@
+
+
+:: StoryStylesheet [stylesheet]
+body {
+	margin: 0;
+	background-color: #fff;
+	background-image: url('https://raw.githubusercontent.com/phibey06/phibey06.github.io/main/twine/woodtexture.jpg');
+	color: #000;
+}
+
+img {
+	width: 64px;
+	border-radius: 2px;
+}
+
+a {
+	color: #000;
+	cursor: pointer;
+}
+
+a:hover {
+    color: #73a9ff;
+    text-decoration: none;
+    -webkit-transition-duration:.5s;
+    -o-transition-duration: .5s;
+    transition-duration: .5s;
+	text-decoration: underline;
+}
+
+#story {
+	background-color: #f2eecb;
+	padding: 5px;
+	box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, .7);
+	border-radius: 3px;
+  	height: fit-content;
+  	width: fit-content;
+}
+
+.passage {
+  	line-height: 1.2;
+  	height: fit-content;
+}
+  	
+
+.textShadow {
+	text-shadow: 1px 0px 8px yellow;
+}
+
+.gridbox {
+ 	display: flex;
+	justify-content: flex-start;
+}
+
+.textbox {
+  	margin: 0 0 0 5px;
+	display: flex;
+}
+
+.title {
+ 	font-size: 10vw;
+}
